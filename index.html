@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigyan Piya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Machine Learning</p>
+                <h1>Hi there, I am <span>Bigyan</span> Piya<br> From Nepal</h1>
+            </div>
+        </div>
+    </div>  
+
+    <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am pursuing a Bachelor of Science in Computer Science at Kathmandu University (KU), where I have developed a strong interest and proficiency in machine learning, data science, and programming. I have completed multiple courses and certifications in Python, SQL, and data science methodologies, and have applied my skills and knowledge to various projects and competitions. One of my proudest achievements was being a global nominee for the NASA International Space App Challenge 2019, where my team and I created a web app that visualized and analyzed the habitability of exoplanets. I am motivated to learn more and explore the possibilities of machine learning and data science in solving real-world problems and creating positive impact.</p> 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Supervise Learning</li>
+                            <li><span>Deep Learning</span><br>CNN</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Present-BS.CS</span><br>Kathmandu University</li>
+                            <li><span>2020-Plus Two</span><br>GEMS</li>
+                            <li><span>2017-SEE</span><br>Little Angel's School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Present</span><br>Software Engineer at XYZ</li>
+                            <li><span>2021-2023</span><br>Intern at ABC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Services Section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="row">
+            <div class="service-col">
+                <h3 style="color: #ff004f;">Web Development</h3>
+                <ul style="color: #fff;">
+                    <li>Responsive web design for all devices</li>
+                    <li>Custom web applications tailored to your needs</li>
+                    <li>Maintenance and optimization of existing websites</li>
+                </ul>
+            </div>
+            <div class="service-col">
+                <h3 style="color: #ff004f;">Machine Learning</h3>
+                <ul style="color: #fff;">
+                    <li>Development of predictive models for business forecasting</li>
+                    <li>Data preprocessing to ensure high-quality inputs</li>
+                    <li>Optimization and deployment of ML algorithms</li>
+                </ul>
+            </div>
+            <div class="service-col">
+                <h3 style="color: #ff004f;">Data Analysis</h3>
+                <ul style="color: #fff;">
+                    <li>Comprehensive data visualization to highlight key trends</li>
+                    <li>In-depth statistical analysis for accurate insights</li>
+                    <li>Data-driven decision-making strategies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-------------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="row">
+                <div class="portfolio-col">
+                    <img src="images/project1.png" alt="Project 1">
+                    <h3>Productivity Plus</h3>
+                    <p>Productivity plus is a personal day planner, which helps a user to keep records of important tasks. Users need to sign up to create account and add their dates of pending assignments, upcoming internals, books borrowed from library and progress of their project. It is especially designed for Kathmandu University students.</p>
+                </div>
+                <div class="portfolio-col">
+                    <img src="images/project2.png" alt="Project 2">
+                    <h3>Parkinson-Disease ML Classifier</h3>
+                    <p>The research-based project where we created a program that gave us the basic initiation on which classification algorithm would be best for prediction of Parkinson's disease using dataset available on UCI ML repository.</p>
+                </div>
+                <div class="portfolio-col">
+                    <img src="images/project3.png" alt="Project 3">
+                    <h3>Food image classification using CNN</h3>
+                    <p>The research-based approach project where we created a program that gave us the nutritional values of the food using food’s image as a source. We used Streamlit and Flask web framework in order to create our website, thereby letting the users drag and drop their desired input image for extracting the nutritional information about it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact</h1>
+            <form name="submit-to-google-sheet" action="submit_form.php" method="post">
+                <div class="row">
+                    <div class="contact-col">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" rows="8" placeholder="Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Other content of your webpage -->
+
+<footer id="contact-info">
+    <div class="container">
+        <div class="social-media">
+            <a href="https://www.facebook.com/bigyan.piya.9/" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://x.com/PiyaBigyan" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/bigyan-piya-583652216/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/bigyan.piya/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <div class="contact-info">
+            <p>Contact No: +977-9840205980</p>
+            <p>Email: <a href="mailto:bigyan.piya@gmail.com">bigyan.piya@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyL00Zl8DXM9YRrJerrh-vh-G4MTU29ebI3rsypPwjqLdprT1DkMyc5mIfCWUw0eGH_/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
