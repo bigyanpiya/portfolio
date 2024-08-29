@@ -8,13 +8,24 @@ body{
     background: #080808;
     color: #fff;
 }
+
+/* Header styling */
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url('images/backgrund.png'); /* Ensure the path is correct */
-    background-size: contain; /* Ensure the image is fully visible */
-    background-position: right center; /* Position the image to the right center */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Circular background image */
+#header::before {
+    content: '';
+    position: absolute;
+    right: 10%; /* Shifts the image a bit leftward */
+    bottom: 20%;
+    width: 55vh;
+    height: 55vh;
+    background-image: url('images/DSC_005711.JPG'); /* Path to the background image */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .container{
     padding: 10px 10%;
@@ -53,12 +64,12 @@ nav ul li a:hover::after {
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 13%;
     font-size: 30px;
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .header-text h1 span{
     color: #ff004f;
@@ -139,10 +150,12 @@ nav ul li a:hover::after {
     background: #1a1a1a;
     padding: 20px 10px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    margin-top: 5%;
 }
-.service-col h3{
+.service-col h2{
     color: #ff004f;
     margin: 10px 0;
+    font-size: larger;
 }
 .service-col p{
     color: #ababab;
@@ -158,13 +171,23 @@ nav ul li a:hover::after {
 
 #services .service-col ul {
     padding-left: 20px;
-    list-style-type: disc; /* Ensure bullets are within the box */
+/* Ensure bullets are within the box */
 }
 
-#services .service-col h3, 
+#services .service-col h2, 
 #services .service-col p, 
 #services .service-col ul li {
     color: #ababab; /* Text color set to white for visibility */
+}
+#services .service-col ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+#services .service-col ul li {
+    margin-bottom: 5px; /* Adds spsacing between items */
+    font-size: 16px; /* Adjusts text size for readability */
 }
 
 /*portfolio*/
@@ -180,6 +203,7 @@ nav ul li a:hover::after {
     background: #1a1a1a;
     padding: 20px 10px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+
 }
 .portfolio-col img{
     width: 100%;
